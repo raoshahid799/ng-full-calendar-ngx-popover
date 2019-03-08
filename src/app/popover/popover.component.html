@@ -1,0 +1,34 @@
+<div>
+  <ng-template #popmeover>
+    <div>
+      <div class="form-group row">
+        <label class="col-md-2 form-control-label " for="activity-type-select">
+          Title</label>
+        <div class="col-md-10 right-border row-padding">
+          {{model.event.title}}
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-2 form-control-label " for="activity-type-select">
+          Start
+        </label>
+        <div class="col-md-10 right-border row-padding">
+          {{model.event.start}}
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-md-2 form-control-label " for="activity-type-select">
+          End
+        </label>
+        <div class="col-md-10 right-border row-padding">
+          {{model.event.end}}
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <div type="button" style="position: absolute;visibility: hidden;" class="btn btn-default btn-secondary" [popover]="popmeover"
+    placement="right" [isOpen]="isOpen">
+  </div>
+</div>

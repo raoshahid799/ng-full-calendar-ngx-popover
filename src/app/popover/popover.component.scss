@@ -1,0 +1,36 @@
+/deep/ {
+   
+   .form-group {
+      margin-bottom: 0px !important;
+    }  
+  
+    .row-padding {
+      padding: 5px;
+    }
+  
+    .popover {
+      top: 10px !important;
+      right: 20px !important;
+      visibility: hidden;
+    }
+  
+    .popover.right .arrow {
+      display: none !important;
+    }
+  
+    .popover-content {
+      padding: 4px 18px;
+    }
+  
+    @media (min-width: 576px) {
+      .popover {
+        max-width: 500px !important;
+      }
+    }
+  
+    @media (min-width: 992px) {
+      .popover {
+        max-width: 700px !important;
+      }
+    }
+}
