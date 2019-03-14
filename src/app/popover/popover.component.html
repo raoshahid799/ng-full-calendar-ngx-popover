@@ -1,5 +1,5 @@
 <div>
-  <ng-template #popmeover>
+  <ng-template #popover>
     <div>
       <div class="form-group row">
         <label class="col-md-2 form-control-label " for="activity-type-select">
@@ -28,7 +28,10 @@
     </div>
   </ng-template>
 
-  <div type="button" style="position: absolute;visibility: hidden;" class="btn btn-default btn-secondary" [popover]="popmeover"
-    placement="right" [isOpen]="isOpen">
-  </div>
+  <div type="button" id="popover-button" style="position: absolute;visibility: hidden;" 
+  [popover]="popover"
+  placement="{{popOverPlacement}}"  
+  container="body"
+  [isOpen]="isOpen">
+</div>
 </div>

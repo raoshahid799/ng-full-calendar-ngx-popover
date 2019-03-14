@@ -51,7 +51,7 @@ export class AppComponent {
     this.popoverService.showPopover(this.popoverElementRef, model);
   }
   eventMouseOut(model) {
-    console.log('mouse oute', model);
+    console.log('mouse out', model);
     this.popoverElementRef.clear();
   }
 
